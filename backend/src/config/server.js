@@ -8,5 +8,7 @@ server.use(bodyParser.urlencoded({extended: true}));
 server.use(bodyParser.json());
 
 server.listen(port, function(){
-    console.log(`backend funfando ${port}.`);
+    console.log(`backend funfando na porta ${port}.`);
 });
+
+module.exports = server;
